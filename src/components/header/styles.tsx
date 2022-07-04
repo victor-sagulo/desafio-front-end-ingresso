@@ -11,7 +11,7 @@ interface ICityModalProps {
 export const StyledHeader = styled.header`
   width: 100%;
   height: 60px;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,7 +40,7 @@ export const StyledTopHeader = styled.div`
   display: flex;
   align-items: center;
 
-  z-index: 1;
+  z-index: 10;
   background-color: rgba(25, 25, 25, 0.9);
   justify-content: space-evenly;
 

@@ -42,19 +42,3 @@ export const CarouselSection = styled.section`
     }
   }
 `;
-
-// export const StyledMovieCarousel = styled.ul`
-//   display: flex;
-//   overflow-y: hidden;
-//   overflow-x: scroll;
-//   width: 100%;
-//   height: 360px;
-//   /* ::-webkit-scrollbar {
-//     width: "7px";
-//   }
-//   ::-webkit-scrollbar-thumb {
-//     background: "#DBDBDB";
-//     border-radius: "4px";
-//     background-clip: "padding-box";
-//   } */
-// `;

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import { MovieProviderData } from "../../@types";
 import { useMovies } from "../../providers/MoviesProviders";
 import { BannerContainer, BannerInfo } from "./movieBannerStyles";

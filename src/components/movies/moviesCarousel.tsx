@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 import { MovieProviderData } from "../../@types";
 import { useMovies } from "../../providers/MoviesProviders";
@@ -21,27 +22,52 @@ const MoviesCarousel = () => {
       partialVisibilityGutter: 20,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 2000 },
+      breakpoint: { max: 2999, min: 2000 },
       items: 7,
       partialVisibilityGutter: 20,
     },
     notebook: {
-      breakpoint: { max: 2000, min: 1024 },
+      breakpoint: { max: 1999, min: 1440 },
       items: 5,
       partialVisibilityGutter: 20,
     },
+    notebookMedium: {
+      breakpoint: { max: 1299, min: 1090 },
+      items: 4,
+      partialVisibilityGutter: 10,
+    },
+    notebookSmall: {
+      breakpoint: { max: 1089, min: 1024 },
+      items: 3,
+      partialVisibilityGutter: 50,
+    },
     tablet: {
-      breakpoint: { max: 1024, min: 768 },
+      breakpoint: { max: 1023, min: 880 },
       items: 3,
       partialVisibilityGutter: 20,
     },
+    tabletSmall: {
+      breakpoint: { max: 879, min: 768 },
+      items: 2,
+      partialVisibilityGutter: 100,
+    },
     largeMobile: {
-      breakpoint: { max: 768, min: 464 },
+      breakpoint: { max: 767, min: 550 },
       items: 2,
       partialVisibilityGutter: 30,
     },
+    mobileMedium: {
+      breakpoint: { max: 549, min: 450 },
+      items: 1,
+      partialVisibilityGutter: 180,
+    },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 449, min: 350 },
+      items: 1,
+      partialVisibilityGutter: 100,
+    },
+    mobileSmall: {
+      breakpoint: { max: 349, min: 0 },
       items: 1,
       partialVisibilityGutter: 50,
     },
@@ -58,7 +84,14 @@ const MoviesCarousel = () => {
           itemClass="carouselItem"
           swipeable={true}
           draggable={true}
-          removeArrowOnDeviceType={["tablet", "mobile"]}
+          removeArrowOnDeviceType={[
+            "mobile",
+            "mobileSmall",
+            "largeMobile",
+            "mobileMedium",
+            "tabletSmall",
+            "tablet",
+          ]}
           partialVisbile={true}
         >
           {moviesList?.map((movie, index) => (

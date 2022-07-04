@@ -4,7 +4,7 @@ interface ICardImgContainer {
   background: string;
 }
 
-export const StyledMovieCard = styled.li<ICardImgContainer>`
+export const StyledMovieCard = styled.div<ICardImgContainer>`
   width: 18%;
   height: 350px;
   min-width: 220px;

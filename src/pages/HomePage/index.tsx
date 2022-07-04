@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Header from "../../components/header";
 import MovieBanner from "../../components/movies/movieBanner";
 import MoviesCarousel from "../../components/movies/moviesCarousel";
@@ -11,8 +12,10 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <MovieBanner />
-      <MoviesCarousel />
+      <main>
+        <MovieBanner />
+        <MoviesCarousel />
+      </main>
       <StyledFooter>
         <div className="footerInfoDiv">
           <div>

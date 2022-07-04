@@ -6,7 +6,9 @@ interface IBannerContainer {
 
 export const BannerContainer = styled.div<IBannerContainer>`
   background-color: #070707dc;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .containerImage {
     position: relative;
     width: 100%;
@@ -15,11 +17,13 @@ export const BannerContainer = styled.div<IBannerContainer>`
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-
     a {
-      width: 100%;
+      width: 100vw;
       height: 100%;
+      left: 0;
+      top: 0;
       position: absolute;
+      z-index: 9;
     }
   }
 
@@ -29,12 +33,10 @@ export const BannerContainer = styled.div<IBannerContainer>`
 
     .containerImage {
       position: relative;
-      margin: 0 auto;
       width: 70%;
       height: 400px;
       background-size: cover;
       background-position: center;
-      /* box-shadow: inset 0px -5px 300px 100px #070707dc; */
       box-shadow: inset 0px -41px 51px 38px rgba(0, 0, 0, 0.75);
     }
 
@@ -42,6 +44,7 @@ export const BannerContainer = styled.div<IBannerContainer>`
       position: absolute;
       height: 100%;
       width: 50px;
+      top: 15px;
       left: -15px;
       filter: blur(10px);
       background-color: #292929;
@@ -51,24 +54,13 @@ export const BannerContainer = styled.div<IBannerContainer>`
       position: absolute;
       height: 100%;
       width: 50px;
+      top: 15px;
       right: -15px;
       filter: blur(10px);
       background-color: #292929;
     }
   }
 `;
-
-// export const BannerImage = styled.img`
-//   width: 100%;
-//   height: 300px;
-//   object-fit: cover;
-
-//   @media screen and (min-width: 768px) {
-//     width: 100%;
-//     object-fit: none;
-//     height: 400px;
-//   }
-// `;
 
 export const BannerInfo = styled.div`
   position: absolute;
