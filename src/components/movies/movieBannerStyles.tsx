@@ -18,10 +18,8 @@ export const BannerContainer = styled.div<IBannerContainer>`
     background-position: top;
     background-repeat: no-repeat;
     a {
-      width: 100vw;
+      width: 100%;
       height: 100%;
-      left: 0;
-      top: 0;
       position: absolute;
       z-index: 9;
     }
